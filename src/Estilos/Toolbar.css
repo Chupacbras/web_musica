@@ -1,0 +1,6 @@
+.Toolbar {
+    display: flex;
+    min-width: 100vh;
+    min-height: 100px;
+    background-color: aqua;
+}
