@@ -1,5 +1,6 @@
 .Fondo {
-    background-color: brown;
-    min-width: 100vh;
-    min-height: 100vh;
+    background-image: url('/public/fondo.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
