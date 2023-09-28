@@ -16,7 +16,9 @@ function App() {
 
   return (
     <div>
+      <div>
       <Toolbar references = {ref}/>
+      </div>
       <div ref={ref.homeRef}>
         <Home/>
       </div>

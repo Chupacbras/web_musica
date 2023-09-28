@@ -1,5 +1,5 @@
 .Cover {
-    margin-top: -70px ;
+    display: flex;
     background-image: url('/public/fondo.jpg');
     background-size: cover;
     width: 100vw;
