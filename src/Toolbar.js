@@ -4,12 +4,12 @@ import './Estilos/Toolbar-button.css';
 import './Estilos/Button-style.css';
 import './Estilos/Toolbar-nombre.css';
 import './Estilos/Toolbar-nombre2.css';
-import { Link } from 'react-router-dom';
 
 
-const Toolbar = () => {
+
+const Toolbar = (props) => {
     const [isSticky, setIsSticky] = useState(false);
-
+    
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -41,17 +41,13 @@ const Toolbar = () => {
     }, []); // Asegúrate de que este efecto solo se ejecute una vez al montar el componente
 
 
-    const homeRef = useRef(null);
-    const aboutMeRef = useRef(null);
-    const mediaRef = useRef(null);
-    const contactRef = useRef(null);
-
     const scrollToSection = (ref) => {
         if (ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
+    const {references} = props;
 
     return (
         <div className="Toolbar">
@@ -61,10 +57,10 @@ const Toolbar = () => {
                 </h1>
             </div>
             <div className='Toolbar-button'>
-                <a ref={homeRef} className='Button-style' onClick={() => scrollToSection(homeRef)}>Home</a>
-                <a ref={aboutMeRef} className='Button-style' onClick={() => scrollToSection(aboutMeRef)}>About me</a>
-                <a ref={mediaRef} className='Button-style' onClick={() => scrollToSection(mediaRef)}>Media</a>
-                <a ref={contactRef} className='Button-style' onClick={() => scrollToSection(contactRef)}>Contact</a>
+                <a className='Button-style' onClick={() => scrollToSection(references.homeRef)}>Home</a>
+                <a className='Button-style' onClick={() => scrollToSection(references.aboutMeRef)}>About me</a>
+                <a className='Button-style' onClick={() => scrollToSection(references.mediaRef)}>Media</a>
+                <a className='Button-style' onClick={() => scrollToSection(references.contactRef)}>Contact</a>
             </div>
         </div>
     )

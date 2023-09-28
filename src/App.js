@@ -1,23 +1,26 @@
 import './Estilos/App.css';
 import './Estilos/Toolbar.css';
-import './Estilos/Fondo.css';
+import './Estilos/Cover.css';
 import Toolbar from './Toolbar';
+import Home from './Home';
 import About from './About';
 import React, { useEffect, useState, useRef } from 'react';
 
 function App() {
-  const homeRef = useRef(null);
-  const aboutMeRef = useRef(null);
-  const mediaRef = useRef(null);
-  const contactRef = useRef(null);
+  const ref = {
+    homeRef: useRef(null),
+    aboutMeRef: useRef(null),
+    mediaRef: useRef(null),
+    contactRef: useRef(null),
+  }
 
   return (
     <div>
-      <div className='Fondo'>
-        <Toolbar
-        />
+      <Toolbar references = {ref}/>
+      <div ref={ref.homeRef}>
+        <Home/>
       </div>
-      <div ref={aboutMeRef}>
+      <div ref={ref.aboutMeRef}>
         <About />
       </div>
     </div>
