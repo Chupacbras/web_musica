@@ -5,10 +5,11 @@ import './Estilos/First_sentence.css';
 function Home() {
     return (
         <div className="Cover">
-        <h className='First_sentence'>
-            "Nobody is better than other <br/>
-                in terms of music"
-        </h>
+            <h className='First_sentence'>
+                "Music is like people: <br />
+                everybody has got a different tone <br />
+                and all of them are unique"
+            </h>
         </div>
     );
 }

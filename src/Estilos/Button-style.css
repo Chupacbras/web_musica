@@ -1,6 +1,7 @@
 .Button-style {
     margin: 20px 70px 20px 4px;
-    font-family: cursive;
+    color: bisque;
+    font-family: Impact;
     font-size: larger;
     background-color: rgb(0, 0, 0, 0);
     cursor: pointer;
