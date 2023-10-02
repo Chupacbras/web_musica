@@ -8,6 +8,7 @@
 }
 
 .slider {
+    align-items: center;
     height: 700px;
     display: flex;
     cursor: grab;
