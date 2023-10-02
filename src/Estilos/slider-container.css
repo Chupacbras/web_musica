@@ -8,20 +8,21 @@
 }
 
 .slider {
-    height: 500px;
+    height: 700px;
     display: flex;
     cursor: grab;
 }
 
 .item {
-    width: 100%;
     padding: 2rem;
     box-sizing: border-box;
 }
 
 .item img {
-    height: 100%;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: auto;
     object-fit: cover;
     pointer-events: none;
 
