@@ -1,0 +1,28 @@
+.slider-container {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+    overflow-x: hidden;
+    border: 1px solid red;
+}
+
+.slider {
+    height: 500px;
+    display: flex;
+    cursor: grab;
+}
+
+.item {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}

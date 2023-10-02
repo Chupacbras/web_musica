@@ -4,6 +4,7 @@ import './Estilos/Cover.css';
 import Toolbar from './Toolbar';
 import Home from './Home';
 import About from './About';
+import Media from './Media';
 import React, { useEffect, useState, useRef } from 'react';
 
 function App() {
@@ -17,13 +18,16 @@ function App() {
   return (
     <div>
       <div>
-      <Toolbar references = {ref}/>
+        <Toolbar references={ref} />
       </div>
       <div ref={ref.homeRef}>
-        <Home/>
+        <Home />
       </div>
       <div ref={ref.aboutMeRef}>
         <About />
+      </div>
+      <div ref={ref.mediaRef}>
+        <Media />
       </div>
     </div>
 
