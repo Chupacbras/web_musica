@@ -1,6 +1,7 @@
 .Foto_desc {
     background-image: url('/public/fondo.jpg');
     background-size: cover;
-    background-position: -400px center;
+    background-position: right center;
     width: 50vw;
+    height: auto;
 }
