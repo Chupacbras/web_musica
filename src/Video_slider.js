@@ -7,8 +7,8 @@ const VideoSlider = ({ videos }) => {
     const [videoIndex, setVideoIndex] = useState(0);
 
     const opts = {
-        height: '200',
-        width: '300',
+        height: '100%',
+        width: '100%',
         playerVars: {
             autoplay: 1,
         },
